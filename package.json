@@ -1,0 +1,26 @@
+{
+  "name": "showcase",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+	"packages/fs2", 
+	"packages/backlog"
+  ],
+  "scripts": {
+	"start": "bun index.ts",
+    "build:md": "bun ./scripts/build.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.6"
+  }
+}
